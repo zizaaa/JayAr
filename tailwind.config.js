@@ -16,7 +16,7 @@ export default {
         'xl':'1031px',
         'lg':'930px',
         'sm':'500px',
-        'xs':'350px'
+        'xs':'400px'
       }
     },
   },

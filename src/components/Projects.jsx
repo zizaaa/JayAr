@@ -12,16 +12,16 @@ const Projects = () => {
         <h1 className="text-lightGreen uppercase font-semibold text-5xl mb-10">Projects</h1>
           {ProjectList.map((project)=>(
             <Bounce right duration={1500} delay={project.id} key={project.id}>
-              <div
+              <a href={`${project.link}`}
                 className="group xs:hover:bg-[rgba(255,255,255,0.09)] xs:hover:drop-shadow-md transition-all duration-300 w-full flex xl:flex-row lg:flex-col sm:flex-row flex-col gap-5 p-5 rounded-lg mb-6 xs:bg-transparent bg-[rgba(255,255,255,0.09)]">
                       <div className="w-[10rem]">
                         <img src={project.imgLink}/>
                       </div>
                       <div className='flex-1'>
-                        <a href='#' className='flex items-center text-slate-400 text-xl mb-3 gap-2 group-hover:text-lightGreen transition-all duration-300 font-semibold'>
+                        <p className='flex items-center text-slate-400 text-xl mb-3 gap-2 group-hover:text-lightGreen transition-all duration-300 font-semibold'>
                           {project.title}
                           <FiExternalLink/>
-                        </a>
+                        </p>
                         <p className="text-slate-400">
                           {project.desk}
                         </p>
@@ -32,7 +32,7 @@ const Projects = () => {
                           ))}
                         </div>
                       </div>
-              </div>
+              </a>
             </Bounce>
           ))}
         </div>

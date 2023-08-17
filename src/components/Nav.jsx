@@ -6,6 +6,7 @@ import { RxCross2 } from 'react-icons/rx'
 import { Bounce,Fade } from 'react-reveal'
 
 import { Link, useLocation } from 'react-router-dom'
+import { useState } from 'react'
 
 const Nav = () => {
     const location = useLocation()
