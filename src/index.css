@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+    @layer base {
+        ::-webkit-scrollbar-thumb{
+            @apply bg-transparent shadow-sm
+        }
+        ::-webkit-scrollbar{
+            @apply w-1 bg-transparent
+        }
+        ::-webkit-scrollbar-thumb{
+            @apply rounded-lg bg-[#03FA6E] /*color trackbar*/
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Roboto:wght@100;300;400;500&display=swap');
+
+        #root{
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
