@@ -5,21 +5,12 @@ import { RiMenu4Line } from 'react-icons/ri'
 import { RxCross2 } from 'react-icons/rx'
 import { Bounce,Fade } from 'react-reveal'
 
-import 'aos/dist/aos.css'; 
-import Aos from 'aos'
-
 import { Link, useLocation } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-
 
 const Nav = () => {
     const location = useLocation()
 
     const [showNav, setSHowNav] = useState(false)
-
-    useEffect(()=>{
-        Aos.init()
-    },[])
  
   return (
     <nav className="flex flex-col items-center lg:justify-between justify-start h-full relative">
