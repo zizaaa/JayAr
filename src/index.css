@@ -18,4 +18,9 @@
         #root{
             font-family: 'Quicksand', sans-serif;
         }
+
+        ::selection{
+            color: #03FA6E;
+            background-color: rgba(3,250,110,0.42);
+        }
     }

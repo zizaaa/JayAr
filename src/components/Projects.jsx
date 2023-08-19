@@ -14,7 +14,7 @@ const Projects = () => {
             <Bounce right duration={1500} delay={project.id} key={project.id}>
               <a href={`${project.link}`}
                 className="group xs:hover:bg-[rgba(255,255,255,0.09)] xs:hover:drop-shadow-md transition-all duration-300 w-full flex xl:flex-row lg:flex-col sm:flex-row flex-col gap-5 p-5 rounded-lg mb-6 xs:bg-transparent bg-[rgba(255,255,255,0.09)]">
-                      <div className="w-[10rem]">
+                      <div className="w-[10rem] mt-2">
                         <img src={project.imgLink}/>
                       </div>
                       <div className='flex-1'>
