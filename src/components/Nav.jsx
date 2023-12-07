@@ -34,7 +34,7 @@ const Nav = () => {
             <Fade left duration={1000} delay={200}>
                 <h2 
                     className="text-3xl font-semibold text-lightGreen mb-3">
-                        Front-end Web Developer
+                        Full-stack Web Developer
                 </h2>
             </Fade>
             <Fade left duration={1000} delay={300}>
