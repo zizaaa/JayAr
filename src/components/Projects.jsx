@@ -20,7 +20,12 @@ const Projects = () => {
                       <div className='flex-1'>
                         <p className='flex items-center text-slate-400 text-xl mb-3 gap-2 group-hover:text-lightGreen transition-all duration-300 font-semibold'>
                           {project.title}
-                          <FiExternalLink/>
+                          {
+                            project.link != '' ?
+                            <FiExternalLink/>
+                            :
+                            null
+                          }
                         </p>
                         <p className="text-slate-400">
                           {project.desk}

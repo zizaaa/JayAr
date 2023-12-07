@@ -31,4 +31,20 @@ export const ProjectList = [
         techUsed:['JavaScript','HTML','CSS'],
         imgLink:'/projects/capstoneGenerator.png'
     },
+    {
+        id:5,
+        title:"ChatVerse",
+        desk:"ChatVerse is an innovative messaging platform that offers a dynamic and engaging environment for users. Within ChatVerse, users can participate in global chats, enabling them to connect with a diverse community and share messages with a broad audience. Additionally, the platform introduces a unique feature that allows users to send anonymous messages to each other, fostering intriguing interactions while respecting privacy. ChatVerse combines the excitement of global conversations with the thrill of anonymous communication, creating a vibrant and inclusive space for users to express themselves freely.",
+        link:'https://chat-verse-dev.vercel.app/',
+        techUsed:['React','Tailwind','Node Js','Firebase', 'MongoDB'],
+        imgLink:'/projects/chatverse.png'
+    },
+    {
+        id:6,
+        title:"WeTech Bot",
+        desk:"\"WeTech\" represents \"We + Technology.\" It conveys a sense of collaboration, teamwork, and inclusivity among those passionate about technology. It signifies a shared journey in the world of tech, where individuals come together to explore, innovate, and excel",
+        link:'',
+        techUsed:['Node Js','MongoDB'],
+        imgLink:'/projects/wetechBot.png'
+    },
 ]
