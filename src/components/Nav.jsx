@@ -3,7 +3,6 @@ import { BsFacebook,BsLinkedin } from 'react-icons/bs'
 import { FaInstagram,FaDiscord } from 'react-icons/fa'
 import { RiMenu4Line } from 'react-icons/ri'
 import { RxCross2 } from 'react-icons/rx'
-import { Bounce,Fade } from 'react-reveal'
 
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useState } from 'react'
@@ -25,28 +24,21 @@ const Nav = () => {
         </div>
 
         <div className="w-full">
-            <Fade left duration={1000}>
                 <h1 
                     className="text-white text-5xl font-semibold">
                         Jay Ar Nava
                 </h1>
-            </Fade>
-            <Fade left duration={1000} delay={200}>
                 <h2 
                     className="text-3xl font-semibold text-lightGreen mb-3">
                         Full-stack Web Developer
                 </h2>
-            </Fade>
-            <Fade left duration={1000} delay={300}>
                 <p 
                     className="text-lg text-slate-400">
                         I find technology fascinating and love creating websites by putting pieces together. I'm dedicated to learning and always finding fresh ways to improve.
                 </p>
-            </Fade>
         </div>
         <div className="lg:flex hidden flex-col items-start w-full gap-5 text-slate-400 uppercase">
-            <Bounce left duration={1500}>
-                <div 
+                {/* <div 
                     className="group flex items-center gap-2">
                         <span 
                             className={`h-[1px] border-b-[1px] ${location.pathname === '/' ? 'border-lightGreen w-[5rem]':'w-[2rem] border-slate-400'} group-hover:border-lightGreen transition-all duration-300`}>
@@ -57,23 +49,19 @@ const Nav = () => {
                             className={({isActive}) => isActive ? "text-white":"text-slate-400 group-hover:text-white transition-colors duration-300"}>
                                 Home
                         </NavLink>
-                </div>
-            </Bounce>
-            <Bounce left duration={1500} delay={100}>
+                </div> */}
                 <div 
                     className="group flex items-center gap-2">
                         <span 
-                            className={`h-[1px] border-b-[1px] ${location.pathname === '/about' ? 'border-lightGreen w-[5rem]':'w-[2rem] border-slate-400'} group-hover:border-lightGreen  transition-all duration-300`}>
+                            className={`h-[1px] border-b-[1px] ${location.pathname === '/' ? 'border-lightGreen w-[5rem]':'w-[2rem] border-slate-400'} group-hover:border-lightGreen  transition-all duration-300`}>
                         </span>
 
                         <NavLink 
-                            to="/about" 
+                            to="/" 
                             className={({isActive}) => isActive ? "text-white":"text-slate-400 group-hover:text-white transition-colors duration-300"}>
                                 About
                         </NavLink>
                 </div>
-            </Bounce>
-            <Bounce left duration={1500} delay={200}>
             <div 
                 className="group flex items-center gap-2">
                     <span 
@@ -85,8 +73,6 @@ const Nav = () => {
                             Projects
                     </NavLink>
             </div>
-            </Bounce>
-            <Bounce left duration={1500} delay={300}>
                 <div 
                     className="group flex items-center w-full gap-2">
                         <span 
@@ -98,44 +84,33 @@ const Nav = () => {
                                 Contact
                         </NavLink>
                 </div>
-            </Bounce>
         </div>
         <div className="flex lg:mb-10 mb-0 items-end w-full gap-3 text-2xl text-slate-400 lg:mt-0 mt-5 h-[2rem]">
-            <Bounce bottom duration={1500}>
                 <a  
                     href='https://github.com/zizaaa'
                         className='hover:text-lightGreen hover:mb-2 transition-all duration-300'>
                             <SiGithub/>
                 </a>
-            </Bounce>
-            <Bounce bottom duration={1500} delay={100}>
                 <a  
                     href='https://www.facebook.com/jyrnv'
                         className='hover:text-lightGreen hover:mb-2 transition-all duration-300'>
                             <BsFacebook/>
                 </a>
-            </Bounce>
-            <Bounce bottom duration={1500} delay={200}>
                 <a  
                     href='https://www.linkedin.com/in/jay-ar-nava-97b7a7223/' 
                         className='hover:text-lightGreen hover:mb-2 transition-all  duration-300'>
                             <BsLinkedin/>
                 </a>
-            </Bounce>
-            <Bounce bottom duration={1500} delay={300}>
                 <a  
                     href='https://www.instagram.com/zizatheprogrammer/' 
                         className='hover:text-lightGreen hover:mb-2 transition-all  duration-300'>
                             <FaInstagram/>
                 </a>
-            </Bounce>
-            <Bounce bottom duration={1500} delay={400}>
                 <a  
                     href='https://discord.gg/MRr6gaZDJP' 
                         className='hover:text-lightGreen hover:mb-2 transition-all  duration-300'>
                             <FaDiscord/>
                 </a>
-            </Bounce>
         </div>
 
         {/* drop down */}
