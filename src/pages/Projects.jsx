@@ -1,5 +1,5 @@
 import { ProjectList } from '../constants/index'
-import ProjectsCard from '../components/cards/projectsCard'
+import ProjectsCard from '../components/cards/ProjectsCard'
 import { Link } from 'react-router-dom'
 import { MdArrowForward } from "react-icons/md";
 
